@@ -2,7 +2,7 @@
 
 import React from "react";
 // import Accordion from "./Components/Accordian/Accordion";
-import Search from './Components/Search/Search'
+// import Search from './Components/Search/Search'
 
 // const items = [
 //     {
@@ -22,7 +22,7 @@ import Search from './Components/Search/Search'
 const App = () => {
     return (
         <div className='ui container'>
-            <Search />
+            {/* <Search /> */}
         </div>
     );
 };

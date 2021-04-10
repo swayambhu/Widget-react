@@ -1,6 +1,6 @@
 /** @format */
 
-import React from "react";
+import React, {useState} from "react";
 // import Accordion from "./Components/Accordian/Accordion";
 // import Search from './Components/Search/Search'
 import Dropdown from './Components/Dropdown/Dropdown';
@@ -36,10 +36,16 @@ const options = [
 // ];
 
 const App = () => {
+
+    const [selected, setSelected] = useState(options[0])
     return (
         <div className='ui container'>
             {/* <Search /> */}
-            <Dropdown options={options}/>
+            <Dropdown
+                options={options}
+                selected={selected}
+                onSelectedChange = {setSelected}
+            />
         </div>
     );
 };

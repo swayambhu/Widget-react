@@ -3,6 +3,22 @@
 import React from "react";
 // import Accordion from "./Components/Accordian/Accordion";
 // import Search from './Components/Search/Search'
+import Dropdown from './Components/Dropdown/Dropdown';
+
+const options = [
+    {
+        label: "The colour Red",
+        value: "red",
+    },
+    {
+        label: "The colour Green",
+        value: "green",
+    },
+    {
+        label: "The colour Blue",
+        value: "blue",
+    },
+];
 
 // const items = [
 //     {
@@ -23,6 +39,7 @@ const App = () => {
     return (
         <div className='ui container'>
             {/* <Search /> */}
+            <Dropdown options={options}/>
         </div>
     );
 };

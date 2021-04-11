@@ -40,7 +40,6 @@ const App = () => {
     const [selected, setSelected] = useState(options[0])
     return (
         <div className='ui container'>
-            {/* <Search /> */}
             <Dropdown
                 options={options}
                 selected={selected}

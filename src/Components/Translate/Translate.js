@@ -1,6 +1,8 @@
-
-import React, { Component, useState } from 'react';
+// AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM
+import React, { useState } from 'react';
 import Dropdown from '../Dropdown/Dropdown.js';
+import Convert from '../Convert/Convert';
+
 
 const options = [
     {
@@ -14,6 +16,10 @@ const options = [
     {
         label: 'Hindi',
         value : 'hi'
+    },
+    {
+        label: 'Marathi',
+        value : 'mr'
     }
 ]
 
@@ -39,6 +45,20 @@ const Translate = () => {
                 onSelectedChange={setLanguage}
                 options={options}
             />
+            <hr />
+            <h3 className="ui header">OUTPUT</h3>
+            <Convert language={language} text={text}/>
+        
+            <h1>This Translation will only Work on Localhost:3000</h1>
+            <p>Please Download the repo then install node modules using <strong><em>"yarn install"</em></strong> command in the respective Directory. Then start the project using <strong><em>"yarn start"</em></strong></p>
+            <h4>Steps to Download and start the project <i>Note:- Make sure you have npm(node) installed</i></h4>
+            <ul>
+                <li>Download Zip file from the github</li>
+                <li>Go in the widgets directory</li>
+                <li>open cmd/terminal</li>
+                <li>Use "yarn install" commant</li>
+                <li>Use "yarn start" command</li>
+            </ul>
         </div>
     );
 }

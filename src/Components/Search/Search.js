@@ -39,7 +39,7 @@ const Search = () => {
             search();
         }
         
-    }, [debouncedTerm]);
+    }, [debouncedTerm, term]);
 
 
     const renderedResults = results.map((result) => {

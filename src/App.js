@@ -4,7 +4,7 @@ import React, {useState} from "react";
 // import Accordion from "./Components/Accordian/Accordion";
 // import Search from './Components/Search/Search'
 import Dropdown from './Components/Dropdown/Dropdown';
-
+import Translate from './Components/Translate/Translate'
 const options = [
     {
         label: "The colour Red",
@@ -41,10 +41,10 @@ const App = () => {
     const [showDropdown, setShowDropdown] = useState(true);
     return (
         <div className='ui container'>
-            <button onClick={() => setShowDropdown(!showDropdown)}>Toggle Dropdown</button>
-            {showDropdown ? <Dropdown options={options} selected={selected} onSelectedChange={setSelected} /> : null}
-            
-            <h1 style={{color:selected.value}}>This is text</h1>
+            {/* <button onClick={() => setShowDropdown(!showDropdown)}>Toggle Dropdown</button> */}
+            {/* {showDropdown ? <Dropdown options={options} selected={selected} onSelectedChange={setSelected} /> : null} */}
+            <Translate / >
+            {/* <h1 style={{color:selected.value}}>This is text</h1> */}
         </div>
     );
 };
